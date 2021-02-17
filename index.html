@@ -37,6 +37,13 @@
 	<!--====== Style CSS ======-->
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<style>
+
+		#header_navbar{
+			border-bottom: 0px !important;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -68,7 +75,7 @@
 	<!--====== HEADER PART START ======-->
 
 	<header class="header_area">
-		<div id="header_navbar" class="header_navbar">
+		<div id="header_navbar" class="header_navbar pt-10 pb-10">
 			<div class="container position-relative">
 				<div class="row align-items-center">
 					<div class="col-xl-12">
@@ -84,21 +91,22 @@
 								<span class="toggler-icon"></span>
 							</button>
 							<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-								<div class="input-group">
-									<div class="form-outline">
-										<input type="search" id="form1" class="form-control" />
-										<label class="form-label" for="form1">Search</label>
+								<div class="d-flex justify-content-center w-75 d-md-flex">
+									<div class="col-lg-8 col-md-6 d-md-flex">
+										<input type="text" placeholder="Buscar..." class="form-control d-md-flex mb-0" id="search" name="search">
 									</div>
-									<button type="button" class="btn btn-primary">
-										<i class="fas fa-search"></i>
-									</button>
+									<div class="col-lg-1 col-md-3 d-md-flex">
+										<button type="submit" class="btn btn-base">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+										</button>
+									</div>
 								</div>
 							</div>
 							<ul class="header-btn d-md-flex">
 								<li>
 									<a href="#" class="main-btn account-btn">
 										<span class="d-md-none"><i class="lni lni-user"></i></span>
-										<span class="d-none d-md-block">My Account</span>
+										<span class="d-none d-md-block">Mi Cuenta</span>
 									</a>
 									<ul class="dropdown-nav">
 										<li><a href="dashboard.html">Dashboard</a></li>
@@ -112,7 +120,8 @@
 									</ul>
 								</li>
 								<li>
-									<a href="post-ad.html" class="main-btn btn-hover d-none d-md-block">Publicar Artículo</a>
+									<a href="post-ad.html" class="main-btn btn-hover d-none d-md-block">Publicar
+										Artículo</a>
 								</li>
 							</ul>
 						</nav> <!-- navbar -->
@@ -131,9 +140,11 @@
 				<div class="mx-auto col-lg-9 col-xl-9 col-md-10">
 					<div class="text-center hero-content">
 						<h1 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Compra y vende lo que quieras</h1>
-						<p class="wow fadeInUp" data-wow-delay=".4s">Tenemos el catálogo más grande y variado de la web!</p></br>
+						<p class="wow fadeInUp" data-wow-delay=".4s">Tenemos el catálogo más grande y variado de la web!
+						</p></br>
 
-						<a href="https://rebrand.ly/gg-classilist/" rel="nofollow" class="main-btn btn-hover">Comenzar a Comprar</a>
+						<a href="https://rebrand.ly/gg-classilist/" rel="nofollow" class="main-btn btn-hover">Comenzar a
+							Comprar</a>
 
 					</div>
 				</div>
@@ -151,24 +162,19 @@
 						<div class="col-lg-3 col-sm-5 col-10">
 							<div class="search-input">
 								<label for="keyword"><i class="lni lni-search-alt theme-color"></i></label>
-								<input type="text" name="keyword" id="keyword" placeholder="Product keyword">
+								<input type="text" name="keyword" id="keyword" placeholder="Producto">
 							</div>
 						</div>
 						<div class="col-lg-3 col-sm-5 col-10">
 							<div class="search-input">
 								<label for="category"><i class="lni lni-grid-alt theme-color"></i></label>
 								<select name="category" id="category">
-									<option value="none" selected disabled>Categories</option>
-									<option value="none">Vehicle</option>
-									<option value="none">Electronics</option>
-									<option value="none">Mobiles</option>
-									<option value="none">Furniture</option>
-									<option value="none">Fashion</option>
-									<option value="none">Jobs</option>
-									<option value="none">Real Estate</option>
-									<option value="none">Animals</option>
-									<option value="none">Education</option>
-									<option value="none">Matrimony</option>
+									<option value="none" selected disabled>Categorías</option>
+									<option value="none">Vehículos</option>
+									<option value="none">Electrónicos</option>
+									<option value="none">Celulares</option>
+									<option value="none">Muebles</option>
+									<option value="none">Moda</option>
 								</select>
 
 							</div>
@@ -177,19 +183,20 @@
 							<div class="search-input">
 								<label for="location"><i class="lni lni-map-marker theme-color"></i></label>
 								<select name="location" id="location">
-									<option value="none" selected disabled>Locations</option>
-									<option value="none">New York</option>
-									<option value="none">California</option>
-									<option value="none">Washington</option>
-									<option value="none">Birmingham</option>
-									<option value="none">Chicago</option>
-									<option value="none">Phoenix</option>
+									<option value="none" selected disabled>Ubicación</option>
+									<option value="none">Barranquilla</option>
+									<option value="none">Bogotá</option>
+									<option value="none">Cartagena</option>
+									<option value="none">Cúcuta</option>
+									<option value="none">Medellín</option>
+									<option value="none">Santa Marta</option>
+									<option value="none">Valledupar</option>
 								</select>
 							</div>
 						</div>
 						<div class="col-lg-2 col-sm-5 col-10">
 							<div class="search-btn">
-								<button class="main-btn btn-hover">Search <i class="lni lni-search-alt"></i></button>
+								<button class="main-btn btn-hover">Buscar <i class="lni lni-search-alt"></i></button>
 							</div>
 						</div>
 					</div>
@@ -208,7 +215,7 @@
 						<div class="icon">
 							<i class="lni lni-car"></i>
 						</div>
-						<h3>Vehicles</h3>
+						<h3>Vehículos</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -216,7 +223,7 @@
 						<div class="icon">
 							<i class="lni lni-display"></i>
 						</div>
-						<h3>Electronics</h3>
+						<h3>Electrónicos</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -224,7 +231,7 @@
 						<div class="icon">
 							<i class="lni lni-mobile"></i>
 						</div>
-						<h3>Mobiles</h3>
+						<h3>Celulares</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -232,7 +239,7 @@
 						<div class="icon">
 							<i class="lni lni-leaf"></i>
 						</div>
-						<h3>Furnitures</h3>
+						<h3>Muebles</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -240,7 +247,7 @@
 						<div class="icon">
 							<i class="lni lni-tshirt"></i>
 						</div>
-						<h3>Fashion</h3>
+						<h3>Moda</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -248,7 +255,7 @@
 						<div class="icon">
 							<i class="lni lni-briefcase"></i>
 						</div>
-						<h3>Jobs</h3>
+						<h3>Trabajo</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -256,7 +263,7 @@
 						<div class="icon">
 							<i class="lni lni-apartment"></i>
 						</div>
-						<h3>Real Estates</h3>
+						<h3>Bienes Raíces</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -264,7 +271,7 @@
 						<div class="icon">
 							<i class="lni lni-book"></i>
 						</div>
-						<h3>Education</h3>
+						<h3>Educación</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -272,7 +279,7 @@
 						<div class="icon">
 							<i class="lni lni-users"></i>
 						</div>
-						<h3>Matrimony</h3>
+						<h3>Freelancers</h3>
 					</a>
 				</div>
 				<div class="category-list-item">
@@ -280,7 +287,7 @@
 						<div class="icon">
 							<i class="lni lni-heart"></i>
 						</div>
-						<h3>Pets</h3>
+						<h3>Mascotas</h3>
 					</a>
 				</div>
 			</div>
@@ -294,9 +301,8 @@
 			<div class="row">
 				<div class="mx-auto col-xl-6 col-lg-7 col-md-10">
 					<div class="text-center section-title mb-60">
-						<h1>Latest Products</h1>
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor
-							invidunt dolore magna.</p>
+						<h1>Últimos Productos</h1>
+						<p>Antójate de lo últimos productos ofrecidos por nuestra comunidad</p>
 					</div>
 				</div>
 			</div>
@@ -317,23 +323,23 @@
 
 						<div class="product-content">
 							<h3 class="name"><a href="product-details.html">Apple iPhone x</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$120.99</h3>
+								<h3 class="price">$20.000</h3>
 							</div>
 						</div>
 					</div>
@@ -353,25 +359,25 @@
 
 						<div class="product-content">
 							<h3 class="name"><a href="product-details.html">Apple MacBook Air</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$420.99</h3>
+								<h3 class="price">$7.000</h3>
 								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
-									Verified Ad</a>
+									Verificado</a>
 							</div>
 						</div>
 					</div>
@@ -390,24 +396,24 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Cctv camera</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<h3 class="name"><a href="product-details.html">Cámara Cctv</a></h3>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$80.99</h3>
+								<h3 class="price">$20.000</h3>
 							</div>
 						</div>
 					</div>
@@ -426,26 +432,26 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Apple's new iMac</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<h3 class="name"><a href="product-details.html">iMac</a></h3>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$3000.99</h3>
+								<h3 class="price">$30.000</h3>
 								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
-									Verified Ad</a>
+									Verificado</a>
 							</div>
 						</div>
 					</div>
@@ -464,24 +470,24 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Best Compact DSLR</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<h3 class="name"><a href="product-details.html">Cámara DSLR</a></h3>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$290.99</h3>
+								<h3 class="price">$90.000</h3>
 							</div>
 						</div>
 					</div>
@@ -500,26 +506,26 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">10 Future Concept Cars</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<h3 class="name"><a href="product-details.html">Carro</a></h3>
+							<span class="update">Última Actualización: Hace 2 horas</span>
 							<ul class="address">
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
+									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 Junio, 2023</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Canada</a>
+									<a href="javascript:void(0)"><i class="lni lni-map-marker"></i> Baranoa</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-user"></i> Stifen Jon</a>
+									<a href="javascript:void(0)"><i class="lni lni-user"></i> Miguel José</a>
 								</li>
 								<li>
-									<a href="javascript:void(0)"><i class="lni lni-package"></i> Used</a>
+									<a href="javascript:void(0)"><i class="lni lni-package"></i> Usado</a>
 								</li>
 							</ul>
 							<div class="product-bottom">
-								<h3 class="price">$4520.99</h3>
+								<h3 class="price">$20.000.000</h3>
 								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
-									Verified Ad</a>
+									Verificado</a>
 							</div>
 						</div>
 					</div>
@@ -536,9 +542,8 @@
 			<div class="row">
 				<div class="mx-auto col-lg-6 col-md-10">
 					<div class="text-center section-title mb-60">
-						<h1>Featured Products</h1>
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor
-							invidunt ut labore et dolore magna.</p>
+						<h1>Productos Destacados</h1>
+						<p>Aquí están los productos que queremos vender, pero no hemos podido.</p>
 					</div>
 				</div>
 			</div>
@@ -554,9 +559,9 @@
 
 							<div class="product-content">
 								<div class="rating-wrapper">
-									<h5 class="price theme-color">$120.99</h5>
+									<h5 class="price theme-color">$20.000</h5>
 									<div class="rating">
-										<span>2 Review</span>
+										<span>2 Comentarios</span>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
@@ -565,11 +570,11 @@
 									</div>
 								</div>
 								<h3 class="name"><a href="product-details.html">Apple iPhone x</a></h3>
-								<p class="sort-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.
+								<p class="sort-des">Aifone 100% nuevo novedoso.
 								</p>
 								<div class="product-bottom">
 									<a href="javascript:void(0)" class="address-link"><i class="lni lni-map-marker"></i>
-										United State of America</a>
+										Juan de Acosta</a>
 									<span class="theme-color"><i class="lni lni-heart"></i></span>
 								</div>
 							</div>
@@ -579,15 +584,15 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="single-product">
 							<div class="product-img">
-								<a href="javascript:void(0)" class="badge">New</a>
+								<a href="javascript:void(0)" class="badge">Nuevo</a>
 								<img src="assets/images/product/l-product-2.jpg" alt="">
 							</div>
 
 							<div class="product-content">
 								<div class="rating-wrapper">
-									<h5 class="price theme-color">$320.99</h5>
+									<h5 class="price theme-color">$90.000</h5>
 									<div class="rating">
-										<span>2 Review</span>
+										<span>2 Comentarios</span>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
@@ -595,12 +600,12 @@
 										<i class="lni lni-star"></i>
 									</div>
 								</div>
-								<h3 class="name"><a href="product-details.html">Best Compact DSLR</a></h3>
-								<p class="sort-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.
+								<h3 class="name"><a href="product-details.html">Computador DSLR</a></h3>
+								<p class="sort-des">El nuevo computador super delgado.
 								</p>
 								<div class="product-bottom">
 									<a href="javascript:void(0)" class="address-link"><i class="lni lni-map-marker"></i>
-										United State of America</a>
+										Juan de Acosta</a>
 									<span class="theme-color"><i class="lni lni-heart"></i></span>
 								</div>
 							</div>
@@ -610,15 +615,15 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="single-product">
 							<div class="product-img">
-								<a href="javascript:void(0)" class="badge bottom">25% Discount</a>
+								<a href="javascript:void(0)" class="badge bottom">25% de Descuento</a>
 								<img src="assets/images/product/l-product-3.jpg" alt="">
 							</div>
 
 							<div class="product-content">
 								<div class="rating-wrapper">
-									<h5 class="price theme-color">$90 <del>$120</del></h5>
+									<h5 class="price theme-color">$100.000 <del>$20.000</del></h5>
 									<div class="rating">
-										<span>2 Review</span>
+										<span>2 Comentarios</span>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
@@ -626,12 +631,12 @@
 										<i class="lni lni-star"></i>
 									</div>
 								</div>
-								<h3 class="name"><a href="product-details.html">Cctv camera</a></h3>
-								<p class="sort-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.
+								<h3 class="name"><a href="product-details.html">Cámara Cctv</a></h3>
+								<p class="sort-des">Para que veas que en el futuro vas a estar sin ella.
 								</p>
 								<div class="product-bottom">
 									<a href="javascript:void(0)" class="address-link"><i class="lni lni-map-marker"></i>
-										United State of America</a>
+										Juan de Acosta</a>
 									<span class="theme-color"><i class="lni lni-heart"></i></span>
 								</div>
 							</div>
@@ -646,9 +651,9 @@
 
 							<div class="product-content">
 								<div class="rating-wrapper">
-									<h5 class="price theme-color">$1120.99</h5>
+									<h5 class="price theme-color">$30.000</h5>
 									<div class="rating">
-										<span>2 Review</span>
+										<span>2 Comentarios</span>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
 										<i class="lni lni-star-filled"></i>
@@ -656,12 +661,12 @@
 										<i class="lni lni-star"></i>
 									</div>
 								</div>
-								<h3 class="name"><a href="product-details.html">Apple's new iMac</a></h3>
-								<p class="sort-des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.
+								<h3 class="name"><a href="product-details.html">iMac</a></h3>
+								<p class="sort-des">La misma cosa pero mas cara.
 								</p>
 								<div class="product-bottom">
 									<a href="javascript:void(0)" class="address-link"><i class="lni lni-map-marker"></i>
-										United State of America</a>
+										Juan de Acosta</a>
 									<span class="theme-color"><i class="lni lni-heart"></i></span>
 								</div>
 							</div>
@@ -677,7 +682,7 @@
 	<div class="mx-auto col-lg-10 col-xl-10 col-md-10 pt-60 mb-60">
 
 		<!--====== FOOTER PART START ======-->
-		<footer class="footer-area">
+		<footer class="footer-area p-5">
 			<div class="widget-wrapper">
 				<div class="map-img">
 					<img src="assets/images/footer/map-img.svg" alt="">
@@ -807,7 +812,7 @@
 			tns({
 				slideBy: 'page',
 				autoplay: false,
-				mouseDrag: true,
+				moUsadorag: true,
 				gutter: 20,
 				nav: false,
 				controls: true,
@@ -841,7 +846,7 @@
 			tns({
 				slideBy: 'page',
 				autoplay: false,
-				mouseDrag: true,
+				moUsadorag: true,
 				gutter: 20,
 				nav: true,
 				controls: false,

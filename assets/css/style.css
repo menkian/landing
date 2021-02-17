@@ -3839,11 +3839,11 @@ footer css
   align-items: center;
   border-radius: 50%;
   background: #fff;
-  color: #98ded9;
+  color: #161d6f;
 }
 
 .footer-area .widget-wrapper .footer-widget ul.social li a:hover {
-  background: #c7ffd8;
+  background: #2E3950;
   color: #fff;
   box-shadow: drop-shadow(0px 5px 15px rgba(255, 107, 107, 0.3));
 }

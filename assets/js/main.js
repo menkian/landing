@@ -21,13 +21,16 @@
         var header_navbar = document.getElementById("header_navbar");
         var sticky = header_navbar.offsetTop;
         var logo = document.querySelector('.navbar-brand img')
+        var texto = document.getElementById('Menkian')
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
             logo.src = 'assets/images/logo/logo-2-01.png';
+            texto.style.color = "#161d6f";
         } else {
             header_navbar.classList.remove("sticky");
             logo.src = 'assets/images/logo/logo-01.png';
+            texto.style.color = "white";
         }
 
 
